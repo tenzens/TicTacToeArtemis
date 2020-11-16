@@ -67,7 +67,7 @@ public class Board {
     public boolean isDraw() {
         for (int i = 0;i<cells.length;i++){
             for (int j = 0; j<cells[i].length;j++){
-                if(cells[i][j].equals(Cell.EMPTY)){
+                if(cells[i][j].player.equals(Cell.EMPTY)){
                     return false;
                 }
             }
